@@ -1,0 +1,176 @@
+package rivirtual;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class PGPropertypostingRealtor {
+
+	public static void main(String[] args) throws InterruptedException, AWTException {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rivirtual.net/preview/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='opening-close']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[normalize-space(text())='Sign In']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@value='realtoravttyp']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()=\"Continue\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.name("agentusername")).sendKeys("ramya1002@rivirtuals.com");
+		Thread.sleep(2000);
+		driver.findElement(By.name("agentloginpassword")).sendKeys("ramya1002@rivirtuals.com");
+		Thread.sleep(2000);
+		driver.findElement(By.id("agentloginbtn")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[normalize-space(.)='Manage Properties']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//a[normalize-space(.)='Add Property'])[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[1]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[12]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[22]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@placeholder=\"Enter property name..\"]")).sendKeys("Rajeshwari test PG2");
+		Thread.sleep(2000);
+		driver.findElement(By.id("deposit_amount")).sendKeys("1000");
+		Thread.sleep(2000);
+		driver.findElement(By.id("maintenance_charge")).sendKeys("1000");
+		Thread.sleep(2000);
+		driver.findElement(By.id("no_of_bedrooms")).sendKeys("2");
+		Thread.sleep(2000);
+		driver.findElement(By.id("bathroom")).sendKeys("2");
+		Thread.sleep(2000);
+		driver.findElement(By.id("floor")).sendKeys("2");
+		Thread.sleep(2000);
+		driver.findElement(By.id("area")).sendKeys("102");
+		Thread.sleep(2000);
+		driver.findElement(By.id("super_area")).sendKeys("112");
+		Thread.sleep(2000);
+		driver.findElement(By.id("carpet_area")).sendKeys("102");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[30]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("single_1")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id=\"rent_input_1\"]")).sendKeys("15000");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[32]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("menu_type")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value=\"NI\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("non_veg_policy")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[normalize-space(.)='Served (Extra Charge)']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("rate6")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("closingtime")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()=\"10:30 PM\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("visit_policy")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value=\"DTO\"]")).click();
+		Thread.sleep(2000);  
+		driver.findElement(By.id("notice_period")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value=\"15\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[36]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[38]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[40]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[42]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//label[@class=\"radio\"])[44]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("states")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value=\"4122\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("city")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value=\"59\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("city")).sendKeys("Andhra Pradesh");
+		Thread.sleep(2000);
+		driver.findElement(By.id("locality")).sendKeys("Ananthapur");
+		Thread.sleep(2000);
+		driver.findElement(By.id("address")).sendKeys("Andhra Pradesh,Ananthapur");
+		Thread.sleep(2000);
+		driver.findElement(By.id("post_code")).sendKeys("454545");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//textarea[@name=\"description\"]")).sendKeys("RiVirtual is a privately owned global real estate FinTech company with a presence in 100 cities in 5 countries and more than 100 million square feet of managed assets for which RiVirtual provides third-party property-level and lending services.");
+		Thread.sleep(2000);
+		driver.findElement(By.id("submitButton")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"AC\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"Cupboard\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"Wi-Fi (High Speed)\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"Power Backup\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"Laundry Service\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[text()=\"Warden on Site\"]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[@for=\"file-1\"]")).click();
+		Thread.sleep(2000);
+		
+		StringSelection str= new StringSelection("\"C:\\Users\\Dell\\OneDrive\\Pictures\\home 2.jpg\"");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str,null);
+		Thread.sleep(2000);
+		Robot r=new Robot();
+		
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//label[@for=\"file-2\"]")).click();
+		Thread.sleep(2000);
+		StringSelection str1=new StringSelection("\"C:\\Users\\Dell\\OneDrive\\Pictures\\Aaryan Aranyam.png\"");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str1,null);
+		Thread.sleep(2000);
+		Robot r1=new Robot();
+		
+		r1.keyPress(KeyEvent.VK_CONTROL);
+		r1.keyPress(KeyEvent.VK_V);
+		r1.keyRelease(KeyEvent.VK_CONTROL);
+		r1.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(2000);
+		r1.keyPress(KeyEvent.VK_ENTER);
+		r1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(5000);
+		
+		//driver.findElement(By.id("submitButton")).click();
+		//Thread.sleep(2000);	
+		
+
+	}
+
+}
